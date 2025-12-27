@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Lachhab | Global Automation Architect</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ttt.css">
+</head>
+<!-- MODIFIED: Default to dark mode -->
+<body data-theme="dark">
+
+    <div class="bg-decoration">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Portofolio</div>
+        <div class="controls">
+            <div class="lang-group">
+                <button class="lang-btn" onclick="setLang('ar')" id="btn-ar">AR</button>
+                <button class="lang-btn" onclick="setLang('fr')" id="btn-fr">FR</button>
+                <button class="lang-btn active" onclick="setLang('en')" id="btn-en">ENG</button>
+            </div>
+            <!-- MODIFIED: Icon starts as sun -->
+            <button class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="imggg.png" alt="Anas Lachhab" class="hero-avatar">
+        
+        <h1 data-i18n="hero_title">Anas Lachhab</h1>
+        <div class="hero-subtitle" id="animated-role">
+            <span class="typing-text"></span><span class="cursor"></span>
+        </div>
+        
+        <div class="bio-stats">
+            <div class="stat-badge">
+                <i class="fas fa-calendar-alt"></i> <span data-i18n="stat_age">25 Years Old</span>
+            </div>
+            <div class="stat-badge">
+                <i class="fas fa-user"></i> <span data-i18n="stat_status">Single</span>
+            </div>
+            <div class="stat-badge">
+                <i class="fas fa-briefcase"></i> <span data-i18n="stat_status">+2 Years</span>
+            </div>
+            <div class="stat-badge">
+                <i class="fas fa-map-marker-alt"></i> <span data-i18n="stat_loc">Rabat, Morocco</span>
+            </div>
+            <div class="stat-badge" style="border-color: var(--accent); color: var(--accent);">
+                <i class="fas fa-plane"></i> <span data-i18n="stat_relocate">Open to Relocate</span>
+            </div>
+             <div class="stat-badge">
+                <i class="fas fa-passport"></i> <span data-i18n="badge_passport">Passport Ready</span>
+            </div>
+        </div>
+
+        <p style="max-width: 600px; opacity:0.8; margin-bottom: 2rem;" data-i18n="hero_catch">
+            "Turning chaos into clarity through Data, and manual tasks into history through Automation."
+        </p>
+        
+        <div class="cta-group">
+            <a href="#contact" class="btn btn-fill"><span data-i18n="btn_contact">Hire Me</span> <i class="fas fa-arrow-right"></i></a>
+            <a href="Anas_Lachhab_CV.pdf" download class="btn btn-outline"><span data-i18n="btn_cv">Download CV</span> <i class="fas fa-download"></i></a>
+        </div>
+    </section>
+    
+
+
+    <!-- TECHNICAL ARSENAL SECTION -->
+    <section id="skills">
+        <div class="section-header">
+            <h2 data-i18n="skills_title">Technical Arsenal</h2>
+            <p data-i18n="skills_sub">The tools I use to build the future.</p>
+        </div>
+        <div class="skills-grid">
+            <!-- AI & Automation -->
+            <div class="skill-category">
+                <h3><i class="fas fa-robot"></i> <span data-i18n="cat_ai_title">AI & Automation</span></h3>
+                <ul class="skill-list" data-i18n="cat_ai_list">
+                    <li>n8n</li>
+                    <li>Make.com / Zapier</li>
+                    <li>OpenAI API</li>
+                    <li>Voiceflow</li>
+                    <li>LangChain</li>
+                </ul>
+            </div>
+            <!-- Data Engineering -->
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> <span data-i18n="cat_data_title">Data Engineering</span></h3>
+                <ul class="skill-list" data-i18n="cat_data_list">
+                    <li>Python (Pandas, NumPy)</li>
+                    <li>SQL (Postgres)</li>
+                    <li>MongoDB</li>
+                    <li>Web Scraping</li>
+                    <li>Tensorflow</li>
+                </ul>
+            </div>
+            <!-- Business & Tools -->
+            <div class="skill-category">
+                <h3><i class="fas fa-chart-line"></i> <span data-i18n="cat_market_title">Business & Tools</span></h3>
+                <ul class="skill-list" data-i18n="cat_market_list">
+                    <li>SEO Strategies</li>
+                    <li>Google Analytics 4</li>
+                    <li>Odoo ERP</li>
+                    <li>Power BI</li>
+                    <li>Figma / Adobe Suite</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-header">
+            <h2 data-i18n="exp_title">Career Timeline</h2>
+        </div>
+        <div class="timeline-container">
+            <div class="job-card">
+                <span style="font-size:0.8rem; opacity:0.6;">Oct 2025 - Present (Target)</span>
+                <h3 class="job-title">Data & AI Automation PMO</h3>
+                <span class="job-company">TARGETUP Consulting</span>
+                <ul style="padding-left: 20px; opacity: 0.8;" data-i18n="exp_targetup_list">
+                    <li>Designing automated workflows with Python and low-code tools.</li>
+                    <li>Managing digital marketing and team leadership.</li>
+                </ul>
+            </div>
+            <div class="job-card">
+                <span style="font-size:0.8rem; opacity:0.6;">Dec 2024 - Present</span>
+                <h3 class="job-title">Data Analyst & Automation Specialist</h3>
+                <span class="job-company">IFCAR SOLUTIONS</span>
+                <ul style="padding-left: 20px; opacity: 0.8;" data-i18n="exp_ifcar_list">
+                    <li>Developed AI Resume Classifier via n8n.</li>
+                    <li>Managed Odoo ERP and improved SEO strategies.</li>
+                </ul>
+            </div>
+            <div class="job-card">
+                <span style="font-size:0.8rem; opacity:0.6;">Oct 2024 - Nov 2024</span>
+                <h3 class="job-title">Data Analyst</h3>
+                <span class="job-company">SOREC</span>
+                <ul style="padding-left: 20px; opacity: 0.8;" data-i18n="exp_sorec_list">
+                    <li>Analyzed datasets and built interactive dashboards.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" style="background: rgba(79, 70, 229, 0.03);">
+        <div class="section-header">
+            <h2 data-i18n="edu_title">Education</h2>
+        </div>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <i class="fas fa-graduation-cap" style="font-size:3rem; color:var(--primary-light); margin-bottom:1rem;"></i>
+                <h3 data-i18n="degree_title">Licence in Economics & Management</h3>
+                <p>Université Mohammed V Agdal, Rabat</p>
+                <span style="display:block; margin-top:10px; font-weight:700; color:var(--accent);">2019 - 2023</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <h2 data-i18n="proj_title">Selected Works</h2>
+            <p data-i18n="proj_sub">Automation in action.</p>
+        </div>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-top"><i class="fab fa-whatsapp"></i></div>
+                <div class="project-content">
+                    <h3>WhatsApp AI Bot</h3>
+                    <p data-i18n="proj_wa">Automated customer service using n8n & OpenAI.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-top"><i class="fas fa-filter"></i></div>
+                <div class="project-content">
+                    <h3>AI CV Screener</h3>
+                    <p data-i18n="proj_cv">Gmail parser that ranks applicants automatically.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-top"><i class="fas fa-chart-pie"></i></div>
+                <div class="project-content">
+                    <h3>Market Dashboard</h3>
+                    <p data-i18n="proj_dash">Real-time data visualization with Python Streamlit.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-top"><i class="fas fa-database"></i></div>
+                <div class="project-content">
+                    <h3>Lead Scraper</h3>
+                    <p data-i18n="proj_lead">Apollo to Odoo CRM automated pipeline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- GLOBAL RELOCATION SECTION (Restored) -->
+    <div class="global-section">
+        <div class="global-content">
+            <h2 data-i18n="map_title">Limitless Deployment</h2>
+            <p data-i18n="map_desc">
+                My code is cloud-native, and so am I. While I am based in Rabat, my ambition is borderless. 
+                I am actively seeking international opportunities and I am <strong>fully prepared to relocate</strong> 
+                anywhere in the world to drive automation success for your company.
+            </p>
+        </div>
+
+        <div class="map-container">
+            <div class="world-bg"></div>
+            <div class="morocco-origin"></div>
+            <svg class="flight-paths" viewBox="0 0 400 400">
+                <path class="flight-path path-1" d="M 200 200 Q 100 150 50 100"></path>
+                <circle class="destination-dot dot-1" cx="50" cy="100" r="5"></circle>
+                <path class="flight-path path-2" d="M 200 200 Q 250 100 300 80"></path>
+                <circle class="destination-dot dot-2" cx="300" cy="80" r="5"></circle>
+                <path class="flight-path path-3" d="M 200 200 Q 300 250 350 300"></path>
+                <circle class="destination-dot dot-3" cx="350" cy="300" r="5"></circle>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <h2 data-i18n="contact_title">Let's Connect</h2>
+        <p style="opacity:0.8; margin-bottom: 2rem;" data-i18n="contact_sub">Ready to discuss relocation or remote opportunities.</p>
+        
+        <div class="bio-stats" style="justify-content: center; margin-bottom: 2rem;">
+            <div class="stat-badge" style="background: rgba(255,255,255,0.1); color: white; border:none;">
+                <i class="fas fa-envelope"></i> anaslachhab666@gmail.com
+            </div>
+            <div class="stat-badge" style="background: rgba(255,255,255,0.1); color: white; border:none;">
+                <i class="fas fa-phone"></i> +212 654 615 222
+            </div>
+        </div>
+
+        <div class="social-row">
+            <a href="mailto:anaslachhab666@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/anas-lachhab" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/anas6666" class="social-link"><i class="fab fa-github"></i></a>
+        </div>
+        <p style="font-size:0.8rem; opacity:0.5;">&copy; 2025 Anas Lachhab. Engineered in Morocco.</p>
+    </footer>
+
+    <script src="ttt.js"></script></body>
+</html>
