@@ -154,6 +154,57 @@
         display: block;
     }
 
+/* --- VIDEO SECTION STYLING --- */
+    #video-demo {
+        position: relative;
+        z-index: 1;
+    }
+
+    .video-wrapper {
+        position: relative;
+        max-width: 900px; /* Limits width on big screens */
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 10px; /* Creates a frame effect */
+        background: var(--surface-color);
+        box-shadow: var(--shadow);
+        border: 1px solid var(--glass-border);
+    }
+
+    .portfolio-video {
+        width: 100%;
+        height: auto;
+        border-radius: 12px; /* Slightly smaller radius for the video itself */
+        display: block;
+        background: black; /* Prevents white flash before loading */
+        cursor: pointer;
+    }
+
+    /* Glow effect behind the video */
+    .video-glow {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        background: var(--primary);
+        filter: blur(60px);
+        opacity: 0.3;
+        z-index: -1; /* Puts it behind the video wrapper */
+        transition: opacity 0.3s ease;
+    }
+
+    /* Make the glow pulse slightly on hover */
+    .video-wrapper:hover .video-glow {
+        opacity: 0.5;
+        background: var(--accent);
+    }
+
+    /* Customizing the video player controls (Webkit only) */
+    video::-webkit-media-controls-panel {
+        background-image: linear-gradient(transparent, rgba(0,0,0,0.5));
+    }
+
     /* --- GLOBAL RELOCATION SECTION --- */
     .global-section {
         padding: 5rem 5%;
