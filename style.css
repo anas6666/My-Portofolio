@@ -119,6 +119,41 @@
     .btn-outline { border: 2px solid var(--text-color); color: var(--text-color); background: transparent; box-shadow: none; }
     .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
 
+        /* Make the dropdown work on hover */
+    .resume-dropdown {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .resume-dropdown .dropdown-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        border: 1px solid #ccc;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 160px; /* adjust as needed */
+        z-index: 10;
+    }
+
+    .resume-dropdown .dropdown-list li a {
+        display: block;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .resume-dropdown .dropdown-list li a:hover {
+        background: #f0f0f0;
+    }
+
+    .resume-dropdown:hover .dropdown-list {
+        display: block;
+    }
+
     /* --- GLOBAL RELOCATION SECTION --- */
     .global-section {
         padding: 5rem 5%;
