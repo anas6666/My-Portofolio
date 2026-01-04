@@ -222,12 +222,11 @@
     .global-content h2 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary); }
     .global-content p { font-size: 1.1rem; color: var(--p-color); margin-bottom: 2rem; }
 
-/* --- WHATSAPP --- */
-/* Floating WhatsApp Button */
+/* WhatsApp Button - bottom-right */
 .whatsapp-btn {
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px; /* move to right */
   background-color: #25D366;
   color: white;
   border-radius: 50%;
@@ -244,32 +243,34 @@
   cursor: pointer;
 }
 
-/* Jump Animation */
+/* Tooltip - always visible above button */
+.whatsapp-btn::after {
+  content: "Hi! I'm Anas AI clone. Ask me so I can see if I can help you fix your problem.";
+  position: absolute;
+  bottom: 70px; /* above button */
+  right: 50%;    /* center horizontally relative to button */
+  transform: translateX(50%);
+  background: #25D366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  white-space: normal; /* allow wrapping */
+  font-size: 12px; /* smaller text */
+  max-width: 200px; /* limit width */
+  line-height: 1.4;
+  box-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+  text-align: center;
+}
+
+/* Jump & Glow Animations */
 @keyframes jump {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
 
-/* Glow Animation */
 @keyframes glow {
   0% { box-shadow: 0 0 10px #25D366, 0 0 20px #25D366; }
   100% { box-shadow: 0 0 20px #25D366, 0 0 40px #25D366; }
-}
-
-/* AI Clone Tooltip - always visible */
-.whatsapp-btn::after {
-  content: "Hi! I'm Anas AI clone. Ask me so I can see if I can help you fix your problem with my skills.";
-  position: absolute;
-  left: 70px; /* next to button */
-  bottom: 50%; /* vertically aligned */
-  transform: translateY(50%);
-  background: #25D366;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 10px;
-  white-space: nowrap;
-  font-size: 14px;
-  box-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
 }
 
     
