@@ -246,10 +246,10 @@
 /* Tooltip - always visible above button */
 /* WhatsApp Button Tooltip - bigger box */
 .whatsapp-btn::after {
-  content: "Talk to my AI Assistant. See if I can help you fix your problem.";
+  content: "Talk to my AI Assistant! See how I can help you fix your problem.";
   position: absolute;
   bottom: 80px; /* above button */
-  right: 50%;    /* center relative to button */
+  right: 20px;    /* center relative to button */
   transform: translateX(50%);
   background: #25D366;
   color: white;
@@ -258,7 +258,7 @@
   white-space: normal;
   font-size: 14px;           /* slightly bigger */
   max-width: 350px;          /* wider box */
-  min-width: 220px;          /* avoid being too small */
+  min-width: 200px;          /* avoid being too small */
   line-height: 1.6;          /* more spacing */
   text-align: center;
   box-shadow: 0 0 15px #25D366, 0 0 25px #25D366;
