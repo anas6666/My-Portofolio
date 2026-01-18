@@ -246,7 +246,7 @@
 
 /* Tooltip - always visible above button */
 .whatsapp-btn::after {
-  content: "Talk to my AI Assistant! See how I can help fix your problem.";
+  content: "Talk to me! See how I can help fix your problem.";
   position: absolute;
   bottom: 75px;   /* Position above the button */
   
